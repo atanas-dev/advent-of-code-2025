@@ -20,13 +20,16 @@ export function run(start: number, steps: number[]) {
     position = (numbers + position + leftover) % numbers;
   }
 
-  /*for (let i = 0; i < steps.length; i++) {
+  /*
+  // This works too but I think it's uglier:
+  for (let i = 0; i < steps.length; i++) {
     const move = position + steps[i];
 
     zeroClicks += Math.floor(Math.abs(move) / numbers) + (steps[i] !== 0 && position !== 0 && move <= 0 ? 1 : 0);
 
     position = (numbers + position + steps[i] % numbers) % numbers;
-  }*/
+  }
+  */
 
   return [position, zeroClicks];
 }
