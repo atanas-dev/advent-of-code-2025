@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "d1": "deno run -P day-1.ts"
+    "d1p2": "deno run -P day-1-part-2.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "permissions": {
+    "default": {
+      "read": true
+    }
+  }
+}
