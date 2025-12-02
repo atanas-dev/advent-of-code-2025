@@ -1,7 +1,7 @@
 import { assertEquals } from "@std/assert";
 import { run } from "./day-1-part-2.ts";
 
-Deno.test(function test() {
+Deno.test(function day1part2() {
   assertEquals(run(50, [40]), [90, 0]);
   assertEquals(run(50, [50]), [0, 1]);
   assertEquals(run(50, [60]), [10, 1]);
